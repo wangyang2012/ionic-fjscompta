@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <app-explore-container name="Tab 2 pages">
+  </app-explore-container>
+
+  <ion-icon name="star"></ion-icon><button ion-button full color="secondary" (click)="showBrowser()">Show Browser</button><br/>
+  <ion-icon name="bus"></ion-icon><button ion-button block color="danger" (click)="closeBrows()">Close Browser</button><br/><br/>
+
+  <ion-icon name="logo-tux"></ion-icon><button ion-button block color="danger" (click)="showBrowserWithTarget('_system')">targetSystem</button><br/>
+  <ion-icon name="logo-android"></ion-icon><button ion-button block color="danger" (click)="showBrowserWithTarget('_blank')">targetBlank</button><br/>
+  <ion-icon name="umbrella"></ion-icon><button ion-button block color="danger" (click)="showBrowserWithTarget('_self')">targetSefl</button><br/>
+</ion-content>

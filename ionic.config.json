@@ -1,5 +1,7 @@
 {
   "name": "fjscompta",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
